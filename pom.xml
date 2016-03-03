@@ -112,7 +112,7 @@
                                     <goal>java</goal>
                                 </goals>
                                 <configuration>
-                                    <mainClass>io.obrown.dockerweb.Entry</mainClass>
+                                    <mainClass>io.obrown.dockerweb.io.obrown.dockerweb.main.Entry</mainClass>
                                     <cleanupDaemonThreads>false
                                     </cleanupDaemonThreads>
                                     <arguments>

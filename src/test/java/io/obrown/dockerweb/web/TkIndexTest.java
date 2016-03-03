@@ -18,7 +18,6 @@ package io.obrown.dockerweb.web;
 
 import com.jcabi.http.request.JdkRequest;
 import com.jcabi.http.response.RestResponse;
-import io.obrown.dockerweb.TkIndex;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URI;
@@ -48,7 +47,7 @@ public final class TkIndexTest {
                         .as(RestResponse.class)
                         .assertStatus(HttpURLConnection.HTTP_OK)
                         .assertBody(
-                            Matchers.containsString("Docker Task Runner")
+                            Matchers.containsString("Docker Web Interface")
                         );
                 }
             }

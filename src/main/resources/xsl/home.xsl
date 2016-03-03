@@ -6,7 +6,7 @@
             <body>
                 <div class="wrapper" style="text-align:center;">
                     <h2>
-                        <xsl:text>Docker Task Runner</xsl:text>
+                        <xsl:text>Docker Web Interface</xsl:text>
                     </h2>
                     <p>OS:
                         <xsl:apply-templates select="status"/>

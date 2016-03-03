@@ -15,32 +15,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package io.obrown.dockerweb;
-
-import com.github.dockerjava.api.model.Info;
-import java.util.HashMap;
-import java.util.Map;
-import org.takes.Request;
-import org.takes.Response;
-import org.takes.Take;
-
 /**
- * TkIndex page.
+ * BB ECS Runner.
+ *
  * @author Armin Braun (me@obrown.io)
  * @version $Id$
- * @since 0.0.1
+ * @since 0.01
  */
-public final class TkIndex implements Take {
-
-    @Override
-    public Response act(final Request request) {
-        final Info info = new LocalDockerDaemon().info();
-        final Map<String, String> params = new HashMap<>(2);
-        params.put("status", info.getOperatingSystem());
-        params.put("containers", Integer.toString(info.getContainers()));
-        return new HtmlResponse(
-            "home.xsl",
-            params
-        ).render();
-    }
-}
+package io.obrown.dockerweb.web;

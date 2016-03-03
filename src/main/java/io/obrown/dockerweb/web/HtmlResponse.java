@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package io.obrown.dockerweb;
+package io.obrown.dockerweb.web;
 
 import java.util.Map;
 import org.takes.Response;

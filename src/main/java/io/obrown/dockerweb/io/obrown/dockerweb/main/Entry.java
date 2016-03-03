@@ -14,8 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package io.obrown.dockerweb;
+package io.obrown.dockerweb.io.obrown.dockerweb.main;
 
+import io.obrown.dockerweb.web.TkBuild;
+import io.obrown.dockerweb.web.TkIndex;
 import java.io.IOException;
 import java.util.Arrays;
 import org.takes.facets.fork.FkRegex;
